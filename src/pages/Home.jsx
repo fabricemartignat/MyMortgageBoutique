@@ -283,7 +283,7 @@ const Home = () => {
                   textAlign: 'center',
                   padding: '1rem',
                 }}>
-                FAQs
+                Your Frequently Asked Questions
               </Typography>
             </Box>
             <div className='outline'></div>
