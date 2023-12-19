@@ -31,7 +31,11 @@ const HomeCard = ({ title, text }) => {
             <Typography
               variant='body2'
               component='p'
-              sx={{ fontSize: '1rem', padding: '1rem' }}>
+              sx={{
+                fontSize: '1rem',
+                padding: '1rem',
+                textShadow: '1px 1px 1px rgb(226, 226, 222)',
+              }}>
               {text}
             </Typography>
           </CardContent>

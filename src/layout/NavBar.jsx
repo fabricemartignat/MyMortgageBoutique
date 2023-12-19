@@ -42,7 +42,7 @@ function NavBar() {
   return (
     <AppBar
       sx={{
-        marginBottom: 2,
+        marginBottom: 0,
         backgroundColor: 'primary.main',
         position: 'fixed',
         top: 0,

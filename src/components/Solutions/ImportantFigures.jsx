@@ -57,7 +57,7 @@ const ImportantFigures = ({ data, loanableValue, bridgeLoan }) => {
           expandIcon={<AddIcon />}
           aria-controls='panel1a-content'
           id='panel1a-header'>
-          <Typography align='center' sx={{ width: '100%' }}>
+          <Typography align='center' sx={{ width: '100%', fontWeight: 500 }}>
             Important figures based on the maximum loanable value of your
             property
           </Typography>

@@ -254,11 +254,12 @@ function FormSolution(props) {
               width: '50%',
               backgroundColor: ' rgb(20, 32, 46)',
               padding: '0.5rem',
-              borderRadius: '10px',
+              borderRadius: '5px',
               fontSize: '1rem',
               marginTop: '1rem',
               '&:hover': {
                 backgroundColor: 'rgb(5, 42, 83)',
+                color: '#f39b04',
               },
             }}>
             SHOW RESULTS
@@ -275,7 +276,7 @@ function FormSolution(props) {
             width: '30%',
             backgroundColor: ' #14202e',
             padding: '0.5rem',
-            borderRadius: '10px',
+            borderRadius: '5px',
             fontSize: '0.8rem',
             marginTop: '2rem',
             '&:hover': {

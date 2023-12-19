@@ -11,14 +11,21 @@ const Footer = () => {
   const year = new Date().getFullYear()
   return (
     <>
-      <Box display='flex' margin={3} height='100px'>
+      <Box
+        sx={{
+          display: 'flex',
+          margin: '3rem',
+          height: '80px',
+          alignItems: 'center',
+        }}>
         <Box
           sx={{
             flexGrow: 1,
             display: { xs: 'none', md: 'flex' },
             justifyContent: 'flex-start',
-            alignItems: 'center',
+
             marginLeft: '2.5rem',
+            paddingTop: '1rem',
           }}>
           <Typography
             variant='body1'
@@ -36,7 +43,7 @@ const Footer = () => {
             flexGrow: 1,
             display: 'flex',
             justifyContent: 'center',
-            alignItems: 'center',
+            paddingTop: '1rem',
           }}>
           <Typography variant='body1' component='p' noWrap>
             Fabrice Martignat &copy; {year}
@@ -47,6 +54,7 @@ const Footer = () => {
             flexGrow: 1,
             display: { xs: 'none', md: 'flex' },
             justifyContent: 'flex-end',
+            paddingTop: '1rem',
           }}>
           <IconButton
             href='http://www.google.com'

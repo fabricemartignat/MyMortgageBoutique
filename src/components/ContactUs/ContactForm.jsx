@@ -133,8 +133,11 @@ function ContactForm() {
             width: '20%',
             backgroundColor: ' #14202e',
             padding: '0.5rem',
-            borderRadius: '10px',
+            borderRadius: '5px',
             fontSize: '1rem',
+            '&:hover': {
+              color: '#f39b04',
+            },
           }}>
           Submit
         </Button>

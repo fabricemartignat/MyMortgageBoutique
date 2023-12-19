@@ -24,8 +24,9 @@ const ContactUs = () => {
                 color: 'secondary.main',
                 fontWeight: 700,
                 textAlign: 'start',
-                borderBottom: 'solid #14202e 3px',
+                borderBottom: 'solid #f39b04 5px',
                 width: 'fit-content',
+                marginTop: '8rem',
               }}>
               Book an Appointment
             </Typography>
@@ -38,6 +39,7 @@ const ContactUs = () => {
                 fontWeight: 300,
                 textAlign: 'start',
                 padding: '1rem 0',
+                textShadow: '1px 1px 1px rgb(226, 226, 222)',
               }}>
               Fill in your details and we'll be in touch soon
             </Typography>

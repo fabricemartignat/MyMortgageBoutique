@@ -38,7 +38,7 @@ const Solutions = () => {
         {' '}
         <title>MyMortgageBoutique | Solutions</title>{' '}
       </Helmet>
-      <Container>
+      <Container sx={{ marginTop: '8rem' }}>
         <Box sx={{ marginBottom: '1rem' }}>
           <Typography
             variant='subtitle2'
@@ -48,7 +48,7 @@ const Solutions = () => {
               color: 'secondary.main',
               fontWeight: 700,
               textAlign: 'start',
-              borderBottom: 'solid #14202e 3px',
+              borderBottom: 'solid #f39b04 5px',
               width: 'fit-content',
             }}>
             Find your mortgage
@@ -62,6 +62,7 @@ const Solutions = () => {
               fontWeight: 400,
               textAlign: 'start',
               padding: '1rem 0',
+              textShadow: '1px 1px 1px rgb(226, 226, 222)',
             }}>
             This tool will enable you to calculate the loanable value of your
             property and find a suitable product and understand the cost of any

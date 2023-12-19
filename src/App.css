@@ -6,9 +6,9 @@ body {
 /* BECAUSE OF FIXED NAVBAR AND FOOTER */
 /* We add padding-bottom to the <main> element to create space for the footer. This padding ensures that the content of the <main> element won't be hidden behind the footer. */
 main {
-  margin-top: 8rem;
+  margin-top: 5rem;
   flex: 1;
-  padding-bottom: 500px;
+  padding-bottom: 200px;
 }
 
 /* NAVBAR */
@@ -30,9 +30,7 @@ main {
 
 /* active link styling in the navbar */
 a.navlink.active {
-  border: 0.1rem solid #ffff;
-  padding: 0.1rem 0.5rem;
-  border-radius: 10px;
+  color: #f39b04;
 }
 
 a.navlink-toggle.active {
@@ -43,10 +41,14 @@ a.navlink-toggle.active {
 footer {
   background-color: #0c0c1e;
   color: #ffff;
-  position: fixed;
+  /* position: fixed;
   bottom: 0;
-  left: 0;
+  left: 0; */
+  /* display: flex; */
+
+  /* align-items: center; */
   width: 100%;
+  height: 100px;
 }
 
 .image {
@@ -58,11 +60,26 @@ footer {
 
 /* ======HERO SECTION======= */
 
+#hero {
+  height: 80vh;
+  margin-top: 0rem;
+  background-image: linear-gradient(
+      rgba(20, 32, 46, 0.4),
+      rgba(20, 32, 46, 0.4)
+    ),
+    url('../assets/hero\ image 3.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
 .button-hero {
   text-decoration: none;
-  background-color: #14202e;
-  padding: 0.5rem;
-  border-radius: 10px;
+  /* background-color: #14202e; */
+  background: linear-gradient(90deg, #14202e, #3a597d);
+  border-color: #f39b04;
+
+  padding: 0.8rem;
+  border-radius: 5px;
   width: 100%;
 }
 
@@ -70,20 +87,29 @@ footer {
   text-decoration: none;
   font-size: 1.2rem;
   font-family: 'Roboto';
-  color: white;
+  color: #ffff;
+
   font-weight: 500;
 }
 
 .button-hero:hover {
-  background-color: #ffff;
-  border: solid #14202e 2px;
+  /* background-color: #ffff; */
+  border: solid #fff 2px;
+  color: #14202e;
 }
 
 .link-hero:hover {
   text-decoration: none;
   font-size: 1.2rem;
   font-family: 'Roboto';
-  color: #14202e;
+  color: #f39b04;
+}
+
+/* KEY MESSAGES SECTION */
+
+#keymessages {
+  height: 200px;
+  margin-top: 5rem;
 }
 
 .cards {
@@ -92,17 +118,20 @@ footer {
   margin: 3rem;
 }
 
-#hero {
-  height: 400px;
-  margin-top: 0rem;
+.hero-outline {
+  height: 2px;
+  width: 20%;
+  border: solid #f39b04 2px;
 }
 
 .outline {
   height: 2px;
   width: 20%;
-  border: solid #14202e 2px;
+  border: solid #f39b04 2px;
   margin: 0.2rem auto 3rem auto;
 }
+
+/* CARD MEDIA */
 
 .cardmedia {
   width: 40%;
@@ -113,6 +142,7 @@ footer {
 #experts {
   margin-top: 10rem;
   margin-bottom: 5rem;
+  background: linear-gradient(90deg, #14202e, #3a597d);
 }
 
 /* ======FORM SOLUTION======= */
@@ -124,12 +154,13 @@ footer {
   position: relative;
   height: 700px;
 }
-.text-solution {
+.text-solution,
+.form-solution {
   border: solid gray 0.5px;
   padding: 2rem;
   border-radius: 10px;
   height: 100%;
-  box-shadow: 1px 1px 1px rgb(67, 67, 65);
+  box-shadow: 1px 1px 0.5px rgb(67, 67, 65);
   height: 700px;
 }
 
@@ -139,6 +170,7 @@ footer {
   border-radius: 10px;
   height: 100%;
   text-align: center;
+  box-shadow: 1px 1px 0.5px rgb(67, 67, 65);
 }
 
 .decline-text {
@@ -151,7 +183,7 @@ footer {
   padding-top: 5rem;
   margin: 0 auto;
   text-align: justify;
-  text-shadow: 1px 1px 1px rgb(226, 226, 222);
+  /* text-shadow: 1px 1px 1px rgb(226, 226, 222); */
   margin-top: 1rem;
 }
 
@@ -168,7 +200,7 @@ footer {
 .button-solution {
   background-color: #14202e;
   padding: 0.5rem;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 40%;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
   border: none;
