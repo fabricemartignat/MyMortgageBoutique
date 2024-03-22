@@ -9,19 +9,12 @@ import { Link } from 'react-router-dom'
 
 const HomeCard = ({ title, text }) => {
   return (
-    <Paper
-      elevation={7}
-      sx={
-        {
-          // maxWidth: { xs: '20rem', md: '20rem', xl: '25rem' },
-        }
-      }>
+    <Paper elevation={7}>
       <Box>
         <Card
           sx={{
             minHeight: '15rem',
-            // maxHeight: '20rem',
-            // maxWidth: { xs: '20rem', md: '20rem', xl: '25rem' },
+
             textAlign: 'center',
             position: 'relative',
             backgroundColor: '#fafafa',

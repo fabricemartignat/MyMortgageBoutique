@@ -11,14 +11,10 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn'
 
 export default function CardExpert({ name, title, src, text, alt }) {
   return (
-    <Paper
-      elevation={7}
-      // sx={{ maxWidth: { xs: '20rem', md: '25rem' } }}
-    >
+    <Paper elevation={7}>
       <Card
         sx={{
           height: '27rem',
-          // maxWidth: { xs: '20rem', md: '25rem' },
 
           textAlign: 'center',
           backgroundColor: '#fafafa',

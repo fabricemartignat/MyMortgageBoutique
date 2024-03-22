@@ -1,15 +1,3 @@
-// export const theme = createTheme({
-//   components: {
-//     MuiButton: {
-//       styleOverrides: {
-//         root: {
-//           backgroundColor: '#e53935',
-//         },
-//       },
-//     },
-//   },
-// })
-
 import { createTheme } from '@mui/material/styles'
 
 export const theme = createTheme({

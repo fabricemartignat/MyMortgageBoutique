@@ -183,7 +183,6 @@ function FormSolution(props) {
               helperText={
                 errors.term ? 'The term must be between 1 and 15 years' : ''
               }
-              // disabled={bridgeLoan}
               value={bridgeLoan ? 1 : field.value}
             />
           )}
@@ -203,7 +202,6 @@ function FormSolution(props) {
               margin='normal'
               error={!bridgeLoan && !!errors.rateType}
               helperText={errors.rateType ? 'Please select a rate type' : ''}
-              // disabled={bridgeLoan}
               value={bridgeLoan ? 'variable' : field.value}>
               {rateOptions.map((option) => (
                 <MenuItem key={option.value} value={option.value}>
@@ -232,7 +230,6 @@ function FormSolution(props) {
                   ? 'Please select a repayment option'
                   : ''
               }
-              // disabled={bridgeLoan}
               value={bridgeLoan ? 'interest only' : field.value}>
               {repaymentOptions.map((option) => (
                 <MenuItem key={option.value} value={option.value}>

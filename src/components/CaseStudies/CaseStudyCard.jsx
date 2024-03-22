@@ -11,15 +11,12 @@ import { Link } from 'react-router-dom'
 
 const CaseStudyCard = ({ post }) => {
   return (
-    <Paper
-      elevation={7}
-      // sx={{ maxWidth: { xs: '20rem', md: '22rem', xl: '25rem' } }}
-    >
+    <Paper elevation={7}>
       <Box>
         <Card
           sx={{
             height: { xs: '30rem', xl: '35rem' },
-            // maxWidth: { xs: '20rem', md: '22rem', xl: '25rem' },
+
             textAlign: 'center',
             backgroundColor: '#fafafa',
             position: 'relative',
@@ -49,9 +46,6 @@ const CaseStudyCard = ({ post }) => {
               marginBottom={2}>
               {post.title}
             </Typography>
-            {/* <Typography component='p' color='text.secondary' fontSize={16}>
-            {post.excerpt}
-          </Typography> */}
 
             <Box
               sx={{
