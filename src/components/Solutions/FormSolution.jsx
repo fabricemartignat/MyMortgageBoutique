@@ -273,7 +273,7 @@ function FormSolution(props) {
           color='primary'
           type='submit'
           sx={{
-            width: '30%',
+            minWidth: '30%',
             backgroundColor: ' #14202e',
             padding: '0.5rem',
             borderRadius: '5px',

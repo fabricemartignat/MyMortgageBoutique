@@ -13,7 +13,7 @@ export default function SimpleAccordion() {
           expandIcon={<ExpandMoreIcon />}
           aria-controls='panel1a-content'
           id='panel1a-header'>
-          <Typography fontWeight={500} fontSize='1rem'>
+          <Typography fontWeight={500}>
             What duration options are available for mortgages terms through
             MyMortgageBoutique?
           </Typography>

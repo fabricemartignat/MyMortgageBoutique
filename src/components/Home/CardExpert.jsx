@@ -11,11 +11,15 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn'
 
 export default function CardExpert({ name, title, src, text, alt }) {
   return (
-    <Paper elevation={7} sx={{ width: { xs: '20rem', md: '25rem' } }}>
+    <Paper
+      elevation={7}
+      // sx={{ maxWidth: { xs: '20rem', md: '25rem' } }}
+    >
       <Card
         sx={{
           height: '27rem',
-          width: { xs: '20rem', md: '25rem' },
+          // maxWidth: { xs: '20rem', md: '25rem' },
+
           textAlign: 'center',
           backgroundColor: '#fafafa',
           position: 'relative',
@@ -46,7 +50,7 @@ export default function CardExpert({ name, title, src, text, alt }) {
             {text}
           </Typography>
           <IconButton
-            href='http://www.google.com'
+            href='https://www.linkedin.com/in/fabrice-martignat/'
             target='_blank'
             rel='noreferrer'
             sx={{ position: 'absolute', bottom: '1rem', left: '1rem' }}>

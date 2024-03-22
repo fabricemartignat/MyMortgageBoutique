@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import CaseStudyCard from './CaseStudyCard'
-import { Grid } from '@mui/material'
+import Grid from '@mui/material/Unstable_Grid2'
 
 const CaseStudiesPage = ({ posts }) => {
   return (

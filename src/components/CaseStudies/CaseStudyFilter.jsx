@@ -81,7 +81,7 @@ export default function CaseStudyFilter({ filterPosts }) {
                   backgroundColor: '#f39b04',
                   width: '15%',
                   marginLeft: '1rem',
-                  fontSize: '1rem',
+                  fontSize: { xs: '0.8rem', md: '1rem' },
                   '&:hover': {
                     backgroundColor: '#e96f3a',
                   },

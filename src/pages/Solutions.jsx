@@ -60,7 +60,7 @@ const Solutions = () => {
             sx={{
               fontSize: '1rem',
               fontWeight: 400,
-              textAlign: 'start',
+              textAlign: { xs: 'justify', md: 'start' },
               padding: '1rem 0',
               textShadow: '1px 1px 1px rgb(226, 226, 222)',
             }}>

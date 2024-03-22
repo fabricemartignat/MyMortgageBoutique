@@ -8,6 +8,7 @@ import { useQuery } from '@apollo/client'
 import { GET_POSTS } from '../queries/productQueries'
 
 import CaseStudiesPage from '../components/CaseStudies/CaseStudiesPage'
+import CaseStudyCard from '../components/CaseStudies/CaseStudyCard'
 import CaseStudyFilter from '../components/CaseStudies/CaseStudyFilter'
 import Loading from '../components/CaseStudies/CaseStudy/Loading'
 import { Container, Grid } from '@mui/material'
@@ -63,7 +64,9 @@ const CaseStudies = () => {
           left: '0',
           right: '0',
         }}>
-        <Typography component='p' fontSize='2rem' fontWeight={400}>
+        <Typography
+          component='p'
+          sx={{ fontWeight: 400, fontSize: { xs: '1.5rem', md: '2rem' } }}>
           MORTGAGE CASE STUDIES
         </Typography>
       </Box>

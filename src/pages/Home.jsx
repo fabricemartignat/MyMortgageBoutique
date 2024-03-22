@@ -1,7 +1,9 @@
 // Helmet component from react-helmet-async to manage title and meta tags
 import { Helmet } from 'react-helmet-async'
 
-import { Grid, Typography, Card, Button, IconButton } from '@mui/material'
+import { Typography, Card, Button, IconButton } from '@mui/material'
+
+import Grid from '@mui/material/Unstable_Grid2'
 
 import Container from '@mui/material/Container'
 
@@ -46,7 +48,7 @@ const Home = () => {
               component='h2'
               sx={{
                 fontFamily: 'Roboto',
-                fontSize: { xs: '1.2rem', md: '2rem' },
+                fontSize: { xs: '1.3rem', md: '2rem' },
                 fontWeight: 700,
                 paddingTop: '5rem',
                 paddingBottom: '1rem',
@@ -54,6 +56,7 @@ const Home = () => {
                 wordSpacing: 5,
                 lineHeight: 1.5,
                 textShadow: '2px 2px 4px #000000',
+                textAlign: { xs: 'center', md: 'left' },
               }}>
               MyMortgageBoutique
               <br />
@@ -65,13 +68,13 @@ const Home = () => {
               component='h6'
               sx={{
                 fontFamily: 'Roboto',
-                textAlign: { xs: 'justify' },
-                fontSize: { xs: '0.8rem', md: '1.2rem' },
+                textAlign: { xs: 'center', md: 'justify' },
+                fontSize: { xs: '1rem', md: '1.3rem' },
                 fontWeight: 400,
                 marginBottom: { xs: '1rem', md: '2rem' },
                 paddingTop: '1rem',
                 color: 'white',
-                textShadow: '0px 1px 1px rgb(226, 226, 222)',
+                // textShadow: '0px 1px 1px rgb(226, 226, 222)',
               }}>
               Tailored mortgage solutions for unique financial situations.
               <br />
@@ -109,7 +112,7 @@ const Home = () => {
           sx={{
             display: { xs: 'none', md: 'flex' },
 
-            height: '100px',
+            height: { xs: '0px', md: '100px' },
           }}>
           <Container maxWidth='xl'>
             <Box
@@ -242,33 +245,40 @@ const Home = () => {
       {/* ======CARDS===== */}
       <section className='cards'>
         <Container maxWidth='xl'>
-          <Box sx={{ marginBottom: '3rem' }}>
-            <Typography
-              variant='subtitle2'
-              component='h2'
+          <div>
+            <Box sx={{ marginBottom: '3rem' }}>
+              <Typography
+                variant='subtitle2'
+                component='h2'
+                sx={{
+                  fontSize: { xs: '1.4rem', md: '1.8rem' },
+                  color: 'secondary.main',
+                  fontWeight: 700,
+                  textAlign: 'center',
+                  textShadow: '1px 1px 1px rgb(226, 226, 222)',
+                }}>
+                How we can help
+              </Typography>
+              <div className='outline'></div>
+            </Box>
+            <Grid
+              container
+              spacing={3}
               sx={{
-                fontSize: { xs: '1.4rem', md: '1.8rem' },
-                color: 'secondary.main',
-                fontWeight: 700,
-                textAlign: 'center',
-                textShadow: '1px 1px 1px rgb(226, 226, 222)',
+                xs: {
+                  display: 'flex',
+                  justifyContent: 'center',
+                },
               }}>
-              How we can help
-            </Typography>
-            <div className='outline'></div>
-          </Box>
-          <Grid
-            container
-            spacing={3}
-            sx={{ display: 'flex', justifyContent: 'center' }}>
-            {cardText.map((card) => {
-              return (
-                <Grid item xs={12} md={4} key={card.id}>
-                  <HomeCard {...card} />
-                </Grid>
-              )
-            })}
-          </Grid>
+              {cardText.map((card) => {
+                return (
+                  <Grid xs={12} md={4} key={card.id}>
+                    <HomeCard {...card} />
+                  </Grid>
+                )
+              })}
+            </Grid>
+          </div>
         </Container>
       </section>
 
@@ -288,7 +298,7 @@ const Home = () => {
               }}>
               Meet our experts
             </Typography>
-            <div className='outline'></div>
+            <div className='outline-expert'></div>
           </Box>
           <Grid container spacing={3} paddingBottom={6}>
             {cardExpert.map((expert) => {
@@ -318,7 +328,12 @@ const Home = () => {
             </Typography>
           </Box>
           <div className='outline'></div>
-          <Box sx={{ width: '50%', display: 'flex', margin: 'auto' }}>
+          <Box
+            sx={{
+              MinWidth: '50%',
+              display: 'flex',
+              margin: 'auto',
+            }}>
             <Accordion />
           </Box>
         </Container>

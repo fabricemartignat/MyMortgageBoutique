@@ -14,7 +14,7 @@ const Footer = () => {
       <Box
         sx={{
           display: 'flex',
-          margin: '3rem',
+
           height: '80px',
           alignItems: 'center',
         }}>
@@ -57,7 +57,7 @@ const Footer = () => {
             paddingTop: '1rem',
           }}>
           <IconButton
-            href='http://www.google.com'
+            href='https://www.linkedin.com/in/fabrice-martignat/'
             target='_blank'
             rel='noreferrer'>
             <LinkedInIcon
@@ -65,7 +65,7 @@ const Footer = () => {
             />
           </IconButton>
           <IconButton
-            href='http://www.google.com'
+            href='https://github.com/'
             target='_blank'
             rel='noreferrer'>
             <GitHubIcon sx={{ fontSize: 30, color: 'white', margin: '1rem' }} />

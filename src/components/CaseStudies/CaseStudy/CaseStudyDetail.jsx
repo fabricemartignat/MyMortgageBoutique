@@ -53,13 +53,15 @@ const CaseStudyDetail = ({ postdetail }) => {
           <Typography
             gutterBottom
             variant='h1'
-            color='#14202e'
-            fontSize={28}
-            textTransform='uppercase'
-            fontWeight={500}
-            lineHeight={1.5}
-            marginBottom={2}
-            marginTop={6}>
+            sx={{
+              fontSize: { xs: '0.9rem', md: '1.5rem' },
+              color: '#14202e',
+              textTransform: 'uppercase',
+              fontWeight: 500,
+              lineHeight: 1.5,
+              marginBottom: 2,
+              marginTop: 6,
+            }}>
             {title}
           </Typography>
 

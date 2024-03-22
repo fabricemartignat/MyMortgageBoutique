@@ -15,7 +15,7 @@ import GitHubIcon from '@mui/icons-material/GitHub'
 
 import MenuItem from '@mui/material/MenuItem'
 
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 const pages = [
   {
@@ -50,23 +50,52 @@ function NavBar() {
       }}
       position='static'>
       <Toolbar sx={{ mx: 5 }} disableGutters>
-        <Typography
-          variant='h6'
-          noWrap
-          component='a'
-          href='/'
-          sx={{
-            mr: 2,
-            padding: 3,
-            display: { xs: 'none', md: 'flex' },
-            fontFamily: 'Cardo',
-            fontWeight: 700,
-            fontSize: '1.3rem',
-            color: 'inherit',
-            textDecoration: 'none',
-          }}>
-          MyMortgageBoutique
-        </Typography>
+        <Box sx={{ display: { xs: 'none', md: 'flex', alignItems: 'center' } }}>
+          <NavLink className='navlink' to='/'>
+            {' '}
+            <img
+              className='logo-underlying'
+              src='/assets/logo MMB V4.png'
+              alt='logo'
+            />
+          </NavLink>
+
+          {/* <Typography
+            variant='h6'
+            noWrap
+            component='a'
+            href='/'
+            sx={{
+              // mr: 2,
+              // padding: 3,
+              display: { xs: 'none', md: 'block' },
+              // fontFamily: 'Cardo',
+              // fontWeight: 700,
+              // fontSize: '1.1rem',
+              // color: 'inherit',
+              // textDecoration: 'none',
+              // textAlign: 'center',
+              // color: '#f39b04',
+            }}>
+            <img
+              className='logo-underlying'
+              src='/assets/logo MMB V3.png'
+              alt='logo'
+            />
+          </Typography> */}
+        </Box>
+
+        {/* {/* <Box sx={{ display: { xs: 'none', md: 'flex', alignItems: 'center' } }}>
+          <Link href='/' component='a'>
+            <img
+              className='logo-underlying'
+              src='/assets/logo MMB V3.png'
+              alt='logo'
+            />
+          </Link>
+        </Box>
+
+        {/* </> */}
 
         <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
           <IconButton
@@ -148,13 +177,13 @@ function NavBar() {
             justifyContent: 'flex-end',
           }}>
           <IconButton
-            href='http://www.google.com'
+            href='https://www.linkedin.com/in/fabrice-martignat/'
             target='_blank'
             rel='noreferrer'>
             <LinkedInIcon sx={{ color: 'white', fontSize: 30 }} />
           </IconButton>
           <IconButton
-            href='http://www.google.com'
+            href='https://github.com/'
             target='_blank'
             rel='noreferrer'>
             <GitHubIcon sx={{ color: 'white', fontSize: 30, marginLeft: 4 }} />
