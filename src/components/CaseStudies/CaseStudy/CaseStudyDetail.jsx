@@ -38,7 +38,7 @@ const CaseStudyDetail = ({ postdetail }) => {
           right: '0',
         }}>
         <Typography component='p' fontSize='2rem' fontWeight={300}>
-          CASE STUDIES
+          CASE STUDY
         </Typography>
       </Box>
 
