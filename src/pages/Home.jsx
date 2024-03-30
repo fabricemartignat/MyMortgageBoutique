@@ -23,12 +23,9 @@ import CardExpert from '../components/Home/CardExpert'
 
 //Import data for Cards
 
-// card messages
+// card messages, card experts
 
-import { cardText } from '../data-ui'
-
-// card experts
-import { cardExpert } from '../data-ui'
+import { cardText, cardExpert } from '../data-ui'
 
 const Home = () => {
   return (
