@@ -55,7 +55,7 @@ function NavBar() {
             {' '}
             <img
               className='logo-underlying'
-              src='/assets/logo.png'
+              src='/assets/logo.jpg'
               alt='logo'
             />
           </NavLink>
