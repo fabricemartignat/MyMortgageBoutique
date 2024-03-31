@@ -65,7 +65,7 @@ const Footer = () => {
             />
           </IconButton>
           <IconButton
-            href='https://github.com/'
+            href='https://github.com/fabricemartignat/MyMortgageBoutique'
             target='_blank'
             rel='noreferrer'>
             <GitHubIcon sx={{ fontSize: 30, color: 'white', margin: '1rem' }} />

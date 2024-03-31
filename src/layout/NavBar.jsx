@@ -145,7 +145,7 @@ function NavBar() {
             <LinkedInIcon sx={{ color: 'white', fontSize: 30 }} />
           </IconButton>
           <IconButton
-            href='https://github.com/'
+            href='https://github.com/fabricemartignat/MyMortgageBoutique'
             target='_blank'
             rel='noreferrer'>
             <GitHubIcon sx={{ color: 'white', fontSize: 30, marginLeft: 4 }} />
