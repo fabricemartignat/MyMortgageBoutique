@@ -17,6 +17,8 @@ import MenuItem from '@mui/material/MenuItem'
 
 import { Link, NavLink } from 'react-router-dom'
 
+import logo from '../../assets/logo.jpg'
+
 const pages = [
   {
     id: 1,
@@ -53,11 +55,7 @@ function NavBar() {
         <Box sx={{ display: { xs: 'none', md: 'flex', alignItems: 'center' } }}>
           <NavLink className='navlink' to='/'>
             {' '}
-            <img
-              className='logo-underlying'
-              src='/assets/logo.jpg'
-              alt='logo'
-            />
+            <img className='logo-underlying' src={logo} alt='logo' />
           </NavLink>
         </Box>
 
