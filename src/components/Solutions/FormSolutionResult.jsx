@@ -21,8 +21,6 @@ const FormSolutionResult = ({ input }) => {
     },
   })
 
-  console.log(data)
-
   if (!propertyValue) return
 
   if (error) return <Error link='/' />
